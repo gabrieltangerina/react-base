@@ -1,13 +1,26 @@
+import * as types from "../types";
+
 const initialState = {
   botaoClicado: false,
 };
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case "BOTAO_CLICADO": {
+    case types.BOTAO_CLICADO_SUCCESS: {
+      console.log("Requisição foi feita com sucesso");
       const newState = { ...state };
       newState.botaoClicado = !newState.botaoClicado;
       return newState;
+    }
+
+    case types.BOTAO_CLICADO_REQUEST: {
+      console.log("Fazendo a requisição");
+      return state;
+    }
+
+    case types.BOTAO_CLICADO_FAILURE: {
+      console.log("Ocorreu um erro na requisição");
+      return state;
     }
     default:
       return state;
