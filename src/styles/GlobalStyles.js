@@ -39,9 +39,9 @@ export default createGlobalStyle`
   }
 
   /* Altera as mensagens (react-toastify) */
-  body .Toastify .Toastify__toast-container .Toastify__toast--success{
+  /* body .Toastify .Toastify__toast-container .Toastify__toast--success{
     background-color: ${colors.detailsColor} ;
-  }
+  } */
 `;
 
 export const Container = styled.section`
