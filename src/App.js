@@ -2,10 +2,13 @@ import React from "react";
 import { Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
-// Reduce (Variáveis Globais)
+// Redux (Variáveis Globais)
 import { Provider } from "react-redux";
 
-import store from "./store";
+// Persist (Armazena mudanças de estado)
+import { PersistGate } from "redux-persist/integration/react";
+
+import store, { persistor } from "./store";
 import history from "./services/history";
 import GlobalStyles from "./styles/GlobalStyles";
 import Header from "./components/header";
@@ -14,12 +17,14 @@ import Routes from "./routes";
 function App() {
   return (
     <Provider store={store}>
-      <Router history={history}>
-        <Header />
-        <Routes />
-        <GlobalStyles />
-        <ToastContainer autoClose={3000} className="toastify-container" />
-      </Router>
+      <PersistGate persistor={persistor}>
+        <Router history={history}>
+          <Header />
+          <Routes />
+          <GlobalStyles />
+          <ToastContainer autoClose={3000} className="toastify-container" />
+        </Router>
+      </PersistGate>
     </Provider>
   );
 }
