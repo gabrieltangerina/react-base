@@ -2,12 +2,17 @@
 
 ## Sobre
 
-Este é um repositório base para aplicações React, organizado e configurado para aprimorar a eficiência no desenvolvimento e, ao mesmo tempo, funcionar como um guia prático para meu aprendizado. Este projeto serve como uma espécie de "cola" para agilizar a criação e o desenvolvimento de minhas aplicações React. <br><br>
+Este repositório serve como uma base para aplicações React. Nele, os arquivos estão organizados e configurados, servindo como guia para futuras modificações. Além disso, as bibliotecas usadas estão configuradas de forma que eu possa reescrever o código para o propósito da minha aplicação.
+
+## Propósito
+
+Além de servir como guia para a criação dos meus projetos React, ele também me ajuda a manter boas práticas na criação do código e na organização dos arquivos.
 
 ## Bibliotecas Usadas
+
 - **Redux:** Gerenciador de estados globais.
-- **Redux Saga:** Middleware para lidar operações assíncronas no Redux.
-- **Redux Persist:** Persistência de estado Redux em armazenamento.
-- **EditorConfig:** Configuração consistente de estilo de código para diversos editores.
-- **ESLint:** Linter para identificar e corrigir problemas no código.
-- **Prettier:** Formatador de código para manter um estilo consistente.
+- **Redux Saga:** Middleware para lidar com operações assíncronas no Redux.
+- **Redux Persist:** Armazena e recupera o estado da aplicação Redux entre sessões.
+- **EditorConfig:** Mantém uma consistência estética entre diferentes editores (IDEs).
+- **ESLint:** Identifica e corrige problemas no código.
+- **Prettier:** Mantém um estilo uniforme em todo o código.
